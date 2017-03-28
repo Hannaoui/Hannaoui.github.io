@@ -1,0 +1,235 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset = "utf-8"/>
+    <title> Cours HTML du 27 mars 2017 </title>
+  </head>      
+  <header> 
+    Cours de HTML et CSS 
+  </header>
+  </footer> 
+    Cours de HTML et CSS 
+  </footer>
+  <nav> 
+    <h1> Sommaire : </h1>
+      <ol>
+        <li> <a href = "#introduction"> Introduction en HTML et CSS </a></li>
+        <li> <a href = "#principe"> Le principe des balises en HTML</a></li>
+        <li> <a href = "#structure"> La structure d'un document en HTML </a></li>
+        <li> <a href = "#traitement"> Balises de traitement de texte en HTML </a></li>
+        <li> <a href = "#interdit"> Les balises interdites en HTML </a></li>
+        <li> <a href = "#liste"> Les listes en HTML  </a></li>
+        <li> <a href = "#echappement"> Les échappements en HTML  </a></li>
+        <li> <a href = "#hyperlien"> Insertion de hyperliens en HTML  </a></li>
+        <li> <a href = "#image"> Insertion des images en HTML  </a></li>
+        <li> <a href = "#tableau"> Insertion des tableaux en HTML  </a></li>
+      </ol>
+  </nav> 
+  <aside> "des éléments à mettre" </aside>                
+    <body> 
+      <section id ="introduction">
+      <h1> Introduction en HTML et CSS : </h1>
+      <p> <strong> HTML est l’abréviation de HyperText Markup Language </strong>, soit en français « langage de balisage hypertexte ». Ce langage a été créé en 1991 et a pour fonction de
+                   structurer et de donner du sens à du contenu. Grâce au HTML, on va par exemple pouvoir indiquer au navigateur que tel texte doit être considéré comme un simple
+                   paragraphe ou que tel autre est un titre. </p>
+      <p> <strong> CSS est le diminutif de Cascading StyleSheets </strong>, ou feuilles de styles en cascade. Le CSS a été créé en 1996 et a pour rôle de mettre en forme du contenu en lui 
+                   appliquant ce qu’on appelle des styles. Le CSS va nous permettre par exemple de définir la taille, la couleur ou l’alignement d’un texte. Nous allons donc utiliser 
+                   le CSS sur notre code HTML, afin d’enjoliver le résultat visuel final. </p>
+                   <p> Pour plus de details  <a href = "https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/comment-fait-on-pour-creer-des-sites-web"> aller plus loin.
+                       </a> </p>
+      </section>
+      <section id ="principe">
+        <h1> Le principe des balises en HTML :</h1>
+        <p> Le point de départ du langage HTML repose sur l'utilisation de balises, elles seront délimitées par des chevrons : &lt; ... &gt;.  
+            Il existe trois types de balises : </p>
+          <ul> 
+            <li> Balise ouvrante : &lt; balise &gt; </li>
+            <li> Balise fermante : &lt; / balise &gt; </li>
+            <li> Balise auto-fermante : &lt; balise / &gt;, moins utilisée </li>
+          </ul>
+          <p> tout ce qui se trouve entre deux balises définit un block. Et tout block est délimité entre une balise ouvrante et une balise fermante. </p>
+      </section>
+      <section id = "structure">
+        <h1> La structure d'un document en HTML :</h1>
+        <p> Pour créer un document <strong> HTML </strong>, il faut respecter la structure suivante :
+        <ul>
+          <li> Tout document <strong>HTML</strong> doit commencer par : &lt;!doctype html&gt;.</li>
+          <li> Ensuite, l'ensemble du texte commence par &lt; / html &gt; et se terminera par &lt; / html &gt;. </li>
+        </ul>
+        <p> Ensuite, le texte HTML se divise en plusieurs parties : </p>
+        <ul>
+          <li> la tête du texte : &lt; Head &gt;. Cette partie contient les méta-informations du document :  </li>
+          <li> le corps du texte : &lt; body &gt; corps du texte &lt; / body &gt;, qui va contenir le texte sémantique qui sera perçu par l'utilisateur futur (après transformation). </li>
+          <ul> 
+            <li> jeu d'encodage. On utilisera utf8. </li>
+            <li> titre du document borné par &lt; title &gt; ... et &lt; / title &gt; </li>
+          </ul>
+          <li> header : représente un groupe de contenu introductif ou de contenu aidant à la navigation. Il peut contenir des éléments de titre, mais aussi
+               d'autres éléments tels qu'un logo, un formulaire de recherche, etc. (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/header"> aller plus loin) </a> </li>
+          <li> nav : représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation 
+               dans un document. (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav"> aller plus loin) </a> </li>
+          <li> aside : est une section de la page dont le contenu est indirectement lié à ce qui l'entoure et qui pourrait être séparé de cet environnement. 
+               (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/aside"> aller plus loin)</a>  </li>
+          <li> footer :  représente le pied de page de la section ou de la racine de sectionnement la plus proche. (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer"> 
+               aller plus loin)</a> </li>
+          <li> article : présente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre. 
+               (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/article"> aller plus loin)</a> </li>
+          <li> section : représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre.
+               (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/section"> aller plus loin)</a> </li>     
+          </ul>   
+      </section>
+        <section id = "traitement">
+        <h1> Les balises de traitement de texte en HTML: </h1>
+          <ul>
+            <li> &lt;strong&gt; : mise en valeur forte (exemple : <strong> HTML </strong>). </li>
+            <li> &lt;em&gt; : mise en valeur normale autrement dit italique (exemple : <em> HTML </em>). </li>
+            <li> &lt;mark&gt; : mise en valeur visuelle (exemple : <mark> HTML </mark>). </li>
+            <li> &lt;h1&gt; mon titre &lt;/h1&gt; : pour la taille des titres niveau 1 (le plus gros caractère). </li>
+            <li> &lt;h2&gt; mon titre &lt;/h2&gt; : pour la taille des titres niveau 2. </li>
+            <li> &lt;h3&gt; mon titre &lt;/h3&gt; : pour la taille des titres niveau 3. </li>
+            <li> &lt;h4&gt; mon titre &lt;/h4&gt; : pour la taille des titres niveau 4. </li>
+            <li> &lt;h5&gt; mon titre &lt; h5&gt; : pour la taille des titres niveau 5. </li>
+            <li> &lt;h6&gt; mon titre &lt;/h6&gt; : pour la taille des titres niveau 6 (le plus petit caractère). </li>
+            <li> &lt;dl&gt; ... &lt;/dl&gt; : liste de définitions.</li>
+            <li> &lt;dt&gt; ... &lt;/dt&gt; : terme à définir.</li>
+            <li> &lt;dd&gt; ... &lt;/dd&gt; : définition des termes.</li>               
+        </ul>
+      </section>
+      <section id = "interdit">
+        <h1> Les balises interdites en HTML : </h1>
+        <p> Ces balises appartiennet à une ancienne époque, donc ils est fortement conseillé de les éviter. </p>
+        <ul>
+          <li> &lt;br&gt; : saut de ligne.</li>
+          <li> &lt;hr&gt; : grand trait.</li>
+        </ul>
+      </section >
+      <section id = "liste">
+        <h1> Les listes en HTML :</h1>
+        <ul>
+          <li> &lt;ol&gt; : liste ordonnée.</li>
+          <li> &lt;ul&gt; : liste non-ordonnée.</li>
+          <li> &lt;li&gt; : ligne.</li>
+        </ul>
+      </section>
+      <section id = "echappement">
+        <h1> Les échappements en HTML :</h1>
+        <p> Pour les besoins de rédaction, il se peut qu'on ait besoin d'écrire certains caractères comme &lt; &gt; ou &amp;. 
+            On appelle cela l'échappement qui correspond à des normes d'écriture qui permettent au texte HTML de comprendre que es caractères sont à lire "normalement" et 
+            non pas pour définir un code précis. Ainsi, </p>
+        <ul>
+          <li> pour le chevron &lt; on écrira  &amplt;</li>
+          <li> pour le chevron &gt; on écrira  &ampgt; </li>
+          <li> pour le caractère &amp; on écrira  & amp; </li>
+        </ul>
+      </section>
+      <section id = "hyperlien">
+        <h1> Insertion de hyperliens en HTML </h1>
+        <p> L'élément &lt;a&gt; définit un hyperlien vers un autre endroit de la même page ou vers une autre page sur le Web. il a un seul attribut obligatoire <em>href</em>, le mode d'emploie est le suivant : </p>
+        <p> &lt;a href = "<em>mon lien</em>" &gt; message &lt;/a&gt; </p>
+        <p> Il contient plusieurs attributs qui ont chacun une fonction spécifique, à l'heure actuelle nous n'avons abordé que l'attribut <em>target</em>. Ce dernier attribut définit la fenêtre dans laquelle 
+            la page cible doit s'afficher : son utilisation permet donc de diriger l'ouverture d'un document cible vers une fenêtre déterrminée. Les valeurs qui peut prendre sont :</p>  
+        <ul>
+          <li> _self : (Valeur par défaut) ouverture de la page cible dans la meme page <a href = https://developer.mozilla.org/fr/ target = _self> exemple. </a> </li>
+          <li> _blank : Ouverture de la page cible dans une nouvelle fenêtre <a href = https://developer.mozilla.org/fr/ target = _self> exemple. </a> </li>
+          <li> _parent : Ouverture de la page cible dans le cadre parent ( de niveau immédiatement supérieur) <a href = https://developer.mozilla.org/fr/ target = _parent> exemple. </a> </li>
+          <li> _top : Ouverture de la page cible dans la fenêtre hôte (par-dessus le FRAMESET) <a href = https://developer.mozilla.org/fr/ target = _top> exemple. </a> </li>
+          <li> _media : (disponible seulement avec IE 6 ou ultérieur) Ouverture de la page cible dans la zone HTLM de la "Media Bar" <a href = https://developer.mozilla.org/fr/ target = _media> 
+                        exemple. </a> </li>
+          <li> _search : (disponible seulement avec IE 6 ou ultérieur) Ouverture de la page cible dans le volet d'exploration (rechercher) du navigateur <a href = https://developer.mozilla.org/fr/ target = _search> 
+                          exemple. </a> </li>
+          <li> nom du cadre : Ouverture de la page cible dans le cadre portant le nom cité ( valeur de l'attribut name ) <a href = https://developer.mozilla.org/fr/ target = _self> exemple. </a> </li> </ul>
+      </section>
+      <section id = "image">
+        <h1> Insertion d'images en HTML </h1>
+        <p> La balise qui permet d'insèrer une image est la suivante &lt;<em>img</em>&gt; </p>
+        <p> Voici une exemple de image :<p/>
+        <p> La balise doit être accompagnée de deux attributs obligatoires : </p>
+        <ul>
+          <li> <em>src</em> : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin.</li>
+          <li> <em>alt</em>  : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à 
+                              la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. 
+                              Cela aide aussi les robots des moteurs de recherche pour les recherches d'images.</li>
+        </ul>
+        <p> <img src="Chat.gif" alt="Photo de chat" /> </p>
+      </section>
+      <section id ="tableau">
+        <h1> Les tableaux en HTML </h1>
+        <p> La première balise à connaître est &lt;table&gt; &lt;/table&gt;. Cette balise qui permet d'indiquer le début et la fin d'un tableau. Cette balise est de type bloc, il faut donc la placer en dehors 
+            d'un paragraphe.</p>
+        <p> les autres balises à connaître sont :
+        <ul>
+          <li> &lt;tr&gt; &lt;/tr&gt; : indique le début et la fin d'une ligne du tableau, </li>
+          <li> &lt;td&gt; &lt;/td&gt; : indique le début et la fin du contenu d'une cellule.</li>
+        </ul>
+        <p> Schématiquement, un tableau se construit comme sur la figure suivante. </p>
+        <p> <img src = "Tableau.png" alt = "Presentation de tableau en HTML" title = "Un tableau, avec des cellules contenues dans des lignes (source openclasserooms)") /> </p>    
+        <p> pour les en-têtes et les pieds de tableau on utilise les deux balises suivantes : </p>
+        <ul>
+          <li>  l'en-tête de tableau il se fdéfinit avec les balises suivates : &lt;thead&gt; &lt;/thead&gt; </li>
+          <li>  le pied de tableau il se fdéfinit avec les balises suivates : &lt;tfoot&gt; &lt;/tfoot&gt; </li>
+          <ul>
+            <li> &lt;th&gt; &lt;/th&gt; : indique le début et la fin du contenu d'une cellule de l'en-tête ou du pied. </li>
+          </ul>
+        </ul>
+        <p> Pour fusionner des cellulles il y'a les deux attributs selon le sens de fusion : </p>
+        <ul> 
+          <li> <em> rowspan </em> : pour fusionner des cellules au sens horizontal</li>
+          <li> <em> colspan </em> : pour fusionner des cellules au sens vertical</li>
+        </ul> 
+        <p> l'utilisation est la suivante : </p>
+        <ul>
+          <li> &lt;td <em> rowspan </em> = "2" <em> colspan </em> ="2"&gt;  </li>
+        </ul>
+        <p> pour ajouter une légende à un tableau il faut utiliser la balise &lt;<em>caption</em>&gt;  la légende &lt;/<em>caption</em>&gt;.</p>
+        <p> enfin la balise <em>colgroup</em> qui définit un groupe de colonnes au sein d'un tableau. Pour cette balise on a exploré l'attribut span qui est un entier positif indiquant le nombre 
+            de colonnes consécutives sur lesquelles appliquer les attributs de l'élément. S'il est absent, sa valeur par défaut est 1. </p>
+        <p> Enfin voilà une exemple de tableau : </p>
+        <table>
+          <caption> titre de mon tableau </caption>
+          <thead>
+            <tr>
+              <th> en-tête 1</th>
+              <th> en-tête 2</th>
+              <th> en-tête 3</th>
+            </tr>
+          </thead>
+            <tr>
+              <td>1 1</td>
+              <td>1 2</td>
+              <td>1 3</td>
+            </tr>
+            <tr>
+              <td>2 1</td>
+              <td>2 2</td>
+              <td>2 3</td>
+              </tr>
+            <tr>
+              <td>3 1</td>
+              <td>3 2</td>
+              <td>3 3</td>
+            </tr>
+            <tr>
+              <td>4 1</td>
+              <td>4 2</td>
+              <td>4 3</td>
+            </tr>
+          <tr>
+            <td>5 1</td>
+            <td>5 2</td>
+            <td>5 3</td>
+          </tr>
+        <tr>
+          <td>6 1</td>
+          <td colspan="2"> 6 2 et 6 3 !</td>
+        </tr>
+        <tfoot>
+          <tr>
+            <th> pied 1</th>
+            <th> pied 2</th>
+            <th> pied 3</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,56 +1,109 @@
 <!doctype html>
-	<html> 
-		<head>
-			<meta charset = "utf-8"/>
-			<title> Cours HTML du 27 mars 2017 </title>
-			</head>
-			<body> 
-			<h1> Introduction </h1>
-				<p> 
-					HTML (HyperText Markup Language) est un langage de desciption de données et non de programation!
-				</p>
-				<p>
-					CSS (Cascading Style Sheets) est un langage utilisé pour la forme, qui nous permet d'inserer differents types d'éléments dans les pages web.
-				</p>
-				<p>
-					Pour plus de details je vous envoie sur internet. 
-				</p>
-			<h1> Quelques balises de structuration de documents </h1>
-				<ul>
-					<li>  &lt;!doctype html&gt; : Balise pour commencer un document. </li>
-					<li>  &lt;html&gt; : Balise principale ouvrante </li>
-					<li>  &lt;/html&gt; : Balise principale fermante </li>
-					<li>  &lt;head&gt; : En-tête de la page ouvrante </li>	
-					<li>  &lt;/head&gt; : En-tête de la page fermante </li>	
-					<li>  &lt;body&gt; : Corps de la page ouvrant </li>
-					<li>  &lt;/body&gt; : Corps de la page fermant </li>
-					
+  <html>
+  
+    <head>
+		<meta charset = "utf8">								
+		<title> HTML pour les Zéros !! </title>		
+	</head>
+	
+	<body>	
+		<h1> Introduction </h1>
+		<p> Avant toutes choses, il est important de poser cette première idée : 
+		le langage HTML (HyperText Markup Language) est un langage de description de données et NON de programmation !!
+		Ce langage permet donc de structurer des données tel que du texte mais également des données vidéo, audio... . C'est la base du développement d'un site Web qui donne son SENS.
+		En parallèle, il existe un autre langage, le CSS (Cascading Style Sheets) qui est un langage utilisé pour la forme, nous reviendrons sur ce langage plus tard, chaque chose en son temps.
+		</p>
+		<p> Tout document HTML DOIT être unique! </p>
+		<p> 
+			Le point de départ du langage HTML repose sur l'utilisation de balises, les balises seront délimitées par des chevrons : &lt; ... &gt;.  
+			Il existe plusieurs types de balises :
+			</p>
+		<ul> 
+			<li> Balise ouvrante : &lt; balise &gt; </li>
+			<li> Balise fermante : &lt; / balise &gt; </li>
+			<li> Balise auto-fermante : &lt; balise / &gt;, moins utilisée </li>
+		</ul>
+		<p>
+			Si l'on se focalise sur les deux premières balises, on définit un block. Ce block est délimité par une balise ouvrante et une balise fermante. 
+			Tous ce qui se trouvent entre ces deux balises sont des enfants de cette balise. Il n'y a pas de délimitation au nombre d'imbrications de balises dans une balise.
+		</p>
+		<p> &lt; "balise ouvrante" &gt; </p>
+		<p> enfants de la balise = contenu </p>
+		<p> &lt; "balise fermante" &gt; </p>
+		
+		<h2>  Structure d'un document HTML </h2>
+		<p> Règle d'or d'écriture : bien incrémenter son texte pour lisibilité. </p>
+		<p> Tout document commence par une balise indispensable permettant de définir avec quelle version HTML on travaille &lt; ! doctype html &gt; </p>
+		<p> Suite, à cette balise, l'ensemnle du texte commence par &lt; / html &gt; et se terminera par &lt; / html &gt; </p>
+		<p> Ensuite, le texte HTML se divise en 2 parties : </p>
+		
+		<ul>
+			<li> la tête du texte : &lt; Head &gt;. Cette partie contient les méta-informations du document 
+				<ul> 
+					<li> jeu d'encodage. On utilisera utf8. </li>
+					<li> titre du document borné par &lt; title &gt; ... et &lt; / title &gt; </li>
 				</ul>
-			<h1> Quelques balises de traitement de texte </h1>
-				<ul>
-					<li>  &lt;strong&gt; : mise en valeur forte (exemple : <strong> HTML </strong>). </li>
-					<li>  &lt;em&gt; : mise en valeur normale autrement dit italique (exemple : <em> HTML </em>). </li>
-					<li>  &lt;mark&gt; : mise en valeur visuelle (exemple : <mark> HTML </mark>). </li>
-					<li> &lt;h1&gt; mon titre &lt;/h1&gt; : pour la taille des titres niveau 1 (le plus gros caractère). </li>
-					<li> &lt;h2&gt; mon titre &lt;/h2&gt; : pour la taille des titres niveau 2. </li>
-					<li> &lt;h3&gt; mon titre &lt;/h3&gt; : pour la taille des titres niveau 3. </li>
-					<li> &lt;h4&gt; mon titre &lt;/h4&gt; : pour la taille des titres niveau 4. </li>
-					<li> &lt;h5&gt; mon titre &lt; h5&gt; : pour la taille des titres niveau 5. </li>
-					<li> &lt;h6&gt; mon titre &lt;/h6&gt; : pour la taille des titres niveau 6 (le plus petit caractère). </li>
-					<li> &lt;dl&gt; ... &lt;/dl&gt; : liste de définitions.</li>
-					<li> &lt;dt&gt; ... &lt;/dt&gt; : terme à définir.</li>
-					<li> &lt;dd&gt; ... &lt;/dd&gt; : définition des termes.</li>				
-				</ul>
-			<h1> Le balises interdites </h1>
-				<ul>
-					<li> &lt;br&gt; : saut de ligne.</li>
-					<li> &lt;hr&gt; : grand trait.</li>
-				</ul>
-			<h1> Les Types de liste </h1>
-			<ul>
-				<li> &lt;ol&gt; : liste ordonnée. </li>
-				<li> &lt;ul&gt; : liste non-ordonnée. </li>
-				<li> &lt;li&gt; : ligne. </li>
-			</ul>
-		</body>
-	</html>
+			<li> le corps du texte : &lt; body &gt; corps du texte &lt; / body &gt;, qui va contenir le texte sémantique qui sera perçu par l'utilisateur futur (après transformation). </li>
+		</ul>
+		
+		<p> Voici comment se présente le corps du document : </p>
+		<p> &lt; ! doctype html &gt; </p>
+		<p> &lt; html &gt; </p>
+		<p> &lt; head &gt; </p>
+		<p> &lt; charset = "utf8" &gt; </p>
+		<p> &lt; title &gt; Titre du document &lt; / title &gt; </p>
+		<p> &lt; / head &gt; </p>
+		<p> &lt; body &gt; </p>
+		<p> &lt; corps du texte &gt; </p>
+		<p> &lt; / body &gt; </p>
+		<p> &lt; / html &gt; </p>
+		<p> <mark> NB </mark> : la balise HTML contient donc 2 enfants qui sont la balise Head et la balise Body. </p>
+		
+		<h2>  Convention d'écriture dans le Corps du texte </h2>
+		<p> En HTML, il y a au maximum 6 niveaux de titres pour organiser sémantiquement un texte : </p>
+		<p> &lt;h1&gt; texte &lt; /h1&gt; : niveau 1 (les plus gros caractères)
+		<p> &lt;h2&gt; texte &lt; /h2&gt; : niveau 2
+		<p> &lt;h3&gt; texte &lt; /h3&gt; : niveau 3
+		<p> &lt;h4&gt; texte &lt; /h4&gt; : niveau 4
+		<p> &lt;h5&gt; texte &lt; /h5&gt; : niveau 5
+		<p> &lt;h6&gt; texte &lt; /h6&gt; : niveau 6 (les plus petits caractères)
+		<p> Balise de paragraphe &lt;p&gt; zone de texte &lt; /p &gt;. 
+		Tout le texte contenu entre ces balises s'affichera en ligne et s'ajuste automatiquement à la taille de la fenêtre. </p>
+		<p> Balise de italique &lt;em&gt; zone de texte ou mot &lt; /em &gt;. </p>
+		<p> Balise d'écriture en gras &lt;strong&gt; zone de texte ou mot &lt; /strong &gt;. </p>
+		<p> Balise de surlignage &lt;mark&gt; zone de texte ou mot &lt; /mark &gt;. </p>
+		<p> NB: les 3 dernières balises sont uniquement pour mettre en valeur la sémantique !! pas de mise forme !! </p>
+		
+		<h2> Balises interdites </h2>
+		<ul> 
+			<li> saut de ligne &lt; br &gt;. </li>
+			<li> trait horizontal &lt; hr &gt; </li>
+		</ul>
+		<p> on ne les utilise pas car posent des problèmes pour les logiciels de lecture d'HTML pour les personnes non-voyantes 
+		mais aussi pour les robots Google ou Bing des moteurs de recherche </p>
+		
+		<h2> Les listes </h2>
+		<p> Il ya deux types de listes très utilisées et un type moins utilisé :</p>
+		<ul> 
+			<li> liste ordonnée </li>
+			<li> liste désordonnée </li>
+			<li> liste de définition </li>
+		</ul>
+		<p> La liste ordonnée est utilisée pour classifier des éléments. Elle permet de numéroter.</p>
+		<p> Voici comment la baliser : &lt;ol&gt; &lt;li&gt; première ligne &lt;/li&gt; &lt;li&gt; deuxième ligne &lt;/li&gt; &lt;li&gt;x ligne &lt;/li&gt; &lt;/ol&gt;</p>
+		<p> La liste désordonnée est utilisée pour lister des éléments en les puçant.</p>
+		<p> Voici comment la baliser : &lt;ul&gt; &lt;li&gt; première ligne &lt;/li&gt; &lt;li&gt; deuxième ligne &lt;/li&gt; &lt;li&gt;x ligne &lt;/li&gt; &lt;/ul&gt;</p>
+		<p> La liste de définition pour allier définition et terme défini </p>
+		<p> Voici comment la baliser : &lt;dl&gt; &lt;dt&gt; terme1 &lt;/dt&gt; &lt;dd&gt; définition &lt;/dd&gt; &lt; &lt;/dl&gt;
+		
+		<h2> Echappement en HTML </h2>
+		<p> Pour les besoins de rédaction, il se peut qu'on ait besoin d'écrire certains caractères comme &lt; &gt; ou &amp;. 
+		On appelle cela l'échappement qui correspond à des normes d'écriture qui permettent au texte HTML de comprendre que es caractères sont à lire "normalement" et non pas pour définir un code précis.
+		Ainsi,
+		</p>
+		<ul>
+			<li> pour le chevron &lt; on écrira  &amplt;</li>
+			<li> pour le chevron &gt; on écrira  &ampgt; </li>
+			<li> pour le caractère &amp; on écrira  & amp; </li>
+	</body>
+  </html>
