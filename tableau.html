@@ -1,0 +1,110 @@
+<!doctype html>
+<html> 
+  <head>
+    <meta charset = "utf-8"/>
+    <title> Cours HTML du 27 mars 2017 </title>
+    <link rel = "stylesheet" type = "text/css" href = "styledoc.css" />
+  </head>      
+  <header> 
+    Cours de HTML et CSS 
+  </header>
+  <nav id = "sommaire" class = "sommaire"> 
+    <h1> Sommaire : </h1>
+      <ol>
+        <li> <a href = "index.html"> Introduction en HTML et CSS </a></li>
+        <li> <a href = "principe.html"> Le principe des balises en HTML</a></li>
+        <li> <a href = "structure.html"> La structure d'un document en HTML </a></li>
+        <li> <a href = "traitement.html"> Balises de traitement de texte en HTML </a></li>
+        <li> <a href = "interdit.html"> Les balises interdites en HTML </a></li>
+        <li> <a href = "liste.html"> Les listes en HTML  </a></li>
+        <li> <a href = "echappement.html"> Les échappements en HTML  </a></li>
+        <li> <a href = "hyperlien.html"> Insertion de hyperliens en HTML  </a></li>
+        <li> <a href = "image.html"> Insertion des images en HTML  </a></li>
+        <li> <a href = "tableau.html"> Insertion de tableaux en HTML  </a></li>
+      </ol>
+  </nav>  
+  <body> 
+    <section id ="tableau">
+      <h1> Insertion de tableaux en HTML </h1>
+      <p> La première balise à connaître est &lt;table&gt; &lt;/table&gt;. Cette balise qui permet d'indiquer le début et la fin d'un tableau. Cette balise est de type bloc, il faut donc la placer en dehors 
+          d'un paragraphe.</p>
+      <p> les autres balises à connaître sont :
+    <ul>
+      <li> &lt;tr&gt; &lt;/tr&gt; : indique le début et la fin d'une ligne du tableau, </li>
+      <li> &lt;td&gt; &lt;/td&gt; : indique le début et la fin du contenu d'une cellule.</li>
+    </ul>
+    <p> Schématiquement, un tableau se construit comme sur la figure suivante. </p>
+    <p> <img src = "Tableau.png" alt = "Presentation de tableau en HTML" title = "Un tableau, avec des cellules contenues dans des lignes (source openclasserooms)")/> </p>    
+    <p> pour les en-têtes et les pieds de tableau on utilise les deux balises suivantes : </p>
+    <ul>
+      <li>  l'en-tête de tableau il se fdéfinit avec les balises suivates : &lt;thead&gt; &lt;/thead&gt; </li>
+      <li>  le pied de tableau il se fdéfinit avec les balises suivates : &lt;tfoot&gt; &lt;/tfoot&gt; </li>
+      <ul>
+        <li> &lt;th&gt; &lt;/th&gt; : indique le début et la fin du contenu d'une cellule de l'en-tête ou du pied. </li>
+      </ul>
+    </ul>
+    <p> Pour fusionner des cellulles il y'a les deux attributs selon le sens de fusion : </p>
+    <ul> 
+      <li> <em> rowspan </em> : pour fusionner des cellules au sens horizontal</li>
+      <li> <em> colspan </em> : pour fusionner des cellules au sens vertical</li>
+    </ul> 
+    <p> l'utilisation est la suivante : </p>
+    <ul>
+      <li> &lt;td <em> rowspan </em> = "2" <em> colspan </em> ="2"&gt;  </li>
+    </ul>
+    <p> pour ajouter une légende à un tableau il faut utiliser la balise &lt;<em>caption</em>&gt;  la légende &lt;/<em>caption</em>&gt;.</p>
+    <p> enfin la balise <em>colgroup</em> qui définit un groupe de colonnes au sein d'un tableau. Pour cette balise on a exploré l'attribut span qui est un entier positif indiquant le nombre 
+        de colonnes consécutives sur lesquelles appliquer les attributs de l'élément. S'il est absent, sa valeur par défaut est 1. </p>
+    <p> Enfin voilà un exemple de tableau : </p>
+    <table>
+      <caption> titre de mon tableau </caption>
+      <thead>
+      <tr>
+        <th> en-tête 1</th>
+        <th> en-tête 2</th>
+        <th> en-tête 3</th>
+      </tr>
+      </thead>
+        <tr>
+        <td>1 1</td>
+        <td>1 2</td>
+        <td>1 3</td>
+      </tr>
+      <tr>
+        <td>2 1</td>
+        <td>2 2</td>
+        <td>2 3</td>
+      </tr>
+      <tr>
+        <td>3 1</td>
+        <td>3 2</td>
+        <td>3 3</td>
+      </tr>
+      <tr>
+        <td>4 1</td>
+        <td>4 2</td>
+        <td>4 3</td>
+      </tr>
+      <tr>
+        <td>5 1</td>
+        <td>5 2</td>
+        <td>5 3</td>
+      </tr>
+      <tr>
+        <td>6 1</td>
+        <td colspan="2"> 6 2 et 6 3 !</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <th> pied 1</th>
+          <th> pied 2</th>
+          <th> pied 3</th>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+ </footer> 
+    <p> © Copyright 2017</p> 
+  </footer>
+  </body>
+</html>
