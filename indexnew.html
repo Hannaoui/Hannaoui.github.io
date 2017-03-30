@@ -3,11 +3,12 @@
   <head>
     <meta charset = "utf-8"/>
     <title> Cours HTML du 27 mars 2017 </title>
+    <link rel = "stylesheet" type = "text/css" href = "styledoc.css" />
   </head>      
   <header> 
     Cours de HTML et CSS 
   </header>
-  <nav> 
+  <nav id = "sommaire" class = "sommaire"> 
     <h1> Sommaire : </h1>
       <ol>
         <li> <a href = "#introduction"> Introduction en HTML et CSS </a></li>
@@ -21,8 +22,9 @@
         <li> <a href = "#image"> Insertion des images en HTML  </a></li>
         <li> <a href = "#tableau"> Insertion de tableaux en HTML  </a></li>
       </ol>
-  </nav>               
+  </nav> 
   <body> 
+  <div class = "corps">
     <section id ="introduction">
     <h1> Introduction en HTML et CSS : </h1>
     <p> <strong> HTML est l’abréviation de HyperText Markup Language </strong>, soit en français « langage de balisage hypertexte ». Ce langage a été créé en 1991 et a pour fonction de
@@ -34,6 +36,10 @@
                 <p> Pour plus de details  <a href = "https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/comment-fait-on-pour-creer-des-sites-web"> cliquez ici.
                     </a> </p>
     </section>
+    
+    
+    
+    
     <section id ="principe">
       <h1> Le principe des balises en HTML :</h1>
       <p> Le point de départ du langage HTML repose sur l'utilisation de balises, elles seront délimitées par des chevrons : &lt; ... &gt;.  
@@ -45,6 +51,8 @@
         </ul>
         <p> tout ce qui se trouve entre deux balises définit un block. Et tout block est délimité entre une balise ouvrante et une balise fermante. </p>
     </section>
+    
+    
     <section id = "structure">
       <h1> La structure d'un document en HTML :</h1>
       <p> Pour créer un document <strong> HTML </strong>, il faut respecter la structure suivante :
@@ -74,6 +82,7 @@
            (<a href = "https://developer.mozilla.org/fr/docs/Web/HTML/Element/section"> aller plus loin)</a> </li>     
       </ul>   
     </section>
+    
     <section id = "traitement">
       <h1> Les balises de traitement de texte en HTML: </h1>
       <ul>
@@ -91,6 +100,8 @@
         <li> &lt;dd&gt; ... &lt;/dd&gt; : définition des termes.</li>               
       </ul>
     </section>
+    
+    
     <section id = "interdit">
       <h1> Les balises interdites en HTML : </h1>
       <p> Ces balises appartiennet à une ancienne époque, donc ils sont fortement déconseillées. </p>
@@ -113,8 +124,8 @@
           On appelle cela l'échappement qui correspond à des normes d'écriture qui permettent au texte HTML de comprendre que es caractères sont à lire "normalement" et 
           non pas pour définir un code précis. Ainsi, </p>
       <ul>
-        <li> pour le chevron &lt; on écrira  &amplt;</li>
-        <li> pour le chevron &gt; on écrira  &ampgt; </li>
+        <li> pour le chevron &lt; on écrira  &amp;lt;</li>
+        <li> pour le chevron &gt; on écrira  &amp;gt; </li>
         <li> pour le caractère &amp; on écrira  & amp; </li>
       </ul>
     </section>
@@ -134,7 +145,7 @@
     <section id = "image">
       <h1> Insertion d'images en HTML </h1>
       <p> La balise qui permet d'insèrer une image est la suivante &lt;<em>img</em>&gt; </p>
-      <p> Voici une exemple de image :<p/>
+      <p> Voici une exemple de image :</p>
       <p> La balise doit être accompagnée de deux attributs obligatoires : </p>
       <ul>
         <li> <em>src</em> : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin.</li>
@@ -154,7 +165,7 @@
       <li> &lt;td&gt; &lt;/td&gt; : indique le début et la fin du contenu d'une cellule.</li>
     </ul>
     <p> Schématiquement, un tableau se construit comme sur la figure suivante. </p>
-    <p> <img src = "Tableau.png" alt = "Presentation de tableau en HTML" title = "Un tableau, avec des cellules contenues dans des lignes (source openclasserooms)") /> </p>    
+    <p> <img src = "Tableau.png" alt = "Presentation de tableau en HTML" title = "Un tableau, avec des cellules contenues dans des lignes (source openclasserooms)")/> </p>    
     <p> pour les en-têtes et les pieds de tableau on utilise les deux balises suivantes : </p>
     <ul>
       <li>  l'en-tête de tableau il se fdéfinit avec les balises suivates : &lt;thead&gt; &lt;/thead&gt; </li>

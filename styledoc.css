@@ -1,15 +1,159 @@
-.sommaire {
-  height : 60px;
-  width : 60px
-  background-color : rgb(0, 255, 0) ;
-  position : relative;
-  top : 10px;
-  left : 10px;
-}
 .paragraphe {
   height : 600px;
-  background-color : rgb(0, 255, 0) ;
+  background-color : rgb(0, 0, 255) ;
   position : absolute;
   top : 40px;
   left : 1000px;
 }
+
+
+
+/* We tell all items to be 100% width */
+.header, .main, .nav, .aside, .footer {
+  flex: 1 100%;
+}
+
+
+
+
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+
+html, body {
+  margin: 30px 200px 4px 150px;
+  padding: 8px;
+	height : 400px;
+ }
+ 
+ body {
+  margin: 30px 200px 4px 150px;
+  padding: 8px;
+	height : 400px;
+ }
+ 
+ .bande1 {
+  display : flex;
+  height : 50px;
+  width : 1470px;
+  position : absolute;
+  background-color : rgba(0, 255, 0, 0.9) ;
+  top : 30px;
+  left : 30px;
+}
+.bande2 {
+  display : flex;
+  height : 50px;
+  width : 1470px;
+  position : absolute;
+  background-color : rgba(0, 255, 0, 0.9) ;
+  top : 140px;
+  left : 30px;
+}
+
+
+
+
+
+
+aside {
+  background-color: rgb(255, 0, 0); 
+  font-family: time, new roman; 
+  font-size: 100%;
+  position : absolute;
+  text-align : justify;
+  top : 250px;
+  left : 8px;
+  width : 290px;
+	height : 150px;
+  background-color : #C0C0C0;
+  border-style : solid;
+ }
+header{
+ background-color: white; 
+ font-family: time, new roman; 
+ font-size: 100%;
+ }
+body {
+ background-color: white; 
+ font-family: time, new roman; 
+ font-size: 100%;
+ }
+h1 {
+ font-size: 150%; 
+ text-align : center;
+ color: navy; 
+ }
+h2 {
+ font-size: 100%; 
+ color: rgba(255,0,0,.85); 
+ padding-left: 15px;
+ }
+p,ul,li,td {
+ color: black; 
+ }
+a:link {
+ color: blue;
+ text-decoration: underline;
+ }
+a:visited {
+ color: gray;
+ }
+a:hover {
+ color: red;
+ text-decoration: none;
+}
+a:active, a:focus {
+ color: red;
+}
+.image {
+  background-color: white; 
+  font-size: 100%;
+  text-align : center;
+ }
+.sommaire{
+  position : fixed;
+  text-align : justify;
+  top : 250px;
+  left : 1150px;
+  width:310px;
+	height:250px;
+  background-color : #C0C0C0;
+  border-style : solid;
+}
+.logo {
+  background-color: white; 
+  position : absolute;
+  top : 120px;
+  left : 0px;
+ }
+ td 
+{
+  border: 1px double black; /* auront une bordure de 1px */
+}
+th
+{
+  border: 2px double red; /* auront une bordure de 1px */
+}
+table {
+  text-align : center;
+  border-collapse: collapse;
+  margin-left: -200px; /* - moitié de la largeur */
+    position: absolute;
+    left: 50%;
+}
+.corps {
+  margin: 100px 10px 4px 40px;
+  padding: 8px;
+	height : 400px;
+ }
+ 
+ 
+ 
