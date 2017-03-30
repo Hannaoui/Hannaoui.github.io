@@ -61,8 +61,8 @@
   text-align : center;
   }
    a:link {
-     color: blue;
-     text-decoration: underline;
+    color: blue;
+    text-decoration: underline;
    }
   a:visited {
    color: gray;
