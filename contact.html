@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title> HTML & CSS </title>
+  </head>
+  
+  <body>
+    <img src = "Images/Communs/entete1.png" alt = "logo" class = "logobande"/>
+    <div class = "bande dessus"> </div>
+    <header class = "header">
+      <img src = "Images/Communs/HTML.png" alt = "logo CSS" class = "logo CSS1"/>
+      <div>
+        <h1>  <em>HTML</em> & <em>CSS</em> </h1>
+      </div>
+      <img src = "Images/Communs/CSS.png" alt = "logo CSS" class = "logo CSS1"/>     
+    </header>
+    <div class = "bande dessous"> </div>
+    <div id ="navbar" class = "navbar">
+      <a href = "index.html"> <h1><em>HTML</em></h1> </a>
+      <a href = "css.html"> <h1><em>CSS</em></h1> </a>
+      <a href = "maquette.html"> <h1><em>Première maquette</em></h1> </a>
+      <a href = "contact.html"> <h1><em>Contact</em></h1> </a>
+    </div>
+    <div class = "contact">   
+      <div class = "contactenfant">
+        <form action="/ma-page-de-contact" method="post">
+          <p>
+           <input type="radio" name="civi" value="Mme" /> Madame
+           <input type="radio" name="civi" value="Mlle" /> Mademoiselle
+           <input type="radio" name="civi" value="Mr" /> Monsieur
+        </p>
+          <p><label for="name"> Nom : </label></p>  
+          <p><input type="text" name="user_name" id="name" required /></p>
+          <p><label for="prenom"> Prénom : </label> </p>  
+          <p><input type="text" name="user_name" id="prenom" required /></p>
+          <p><label for="email"> Email : </label></p>  
+          <p><input type="text" name="user_name" id="email" required /></P>
+          <p><label for="situation"> Situation professionel : </label></p>
+          <p>
+           <select name="situation" id = "situation">
+              <option value="salarier"> Salarié</option>
+              <option value="etudiant" selected="selected">Etudiant</option>
+              <option value="autre">Autre</option>
+           </select>
+          </p> 
+          <p><label for="satisfait"> êtes-vous : : </label></p>
+          <p>
+           <select name="situation" id = "satisfait">
+              <option value="ts">très satisfait</option>
+              <option value="s" selected="selected">satisfait</option>
+              <option value="ps">peu satisfait</option>
+              <option value="pes">très peu satisfait</option>
+           </select>
+          </p>
+          <p><label for="commentaire"> Commentaire: </label></p>
+          <p><textarea name="user_name" id="commentaire"> </textarea></p>
+          <p><button type="submit"> Envoyer</button></p>
+          <p><button type="reset"> Annuler </button></p>
+        </form>
+      </div>
+    </div>   
+  </body>  
+</html>

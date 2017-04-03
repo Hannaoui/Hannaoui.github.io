@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title> HTML & CSS </title>
+  </head>
+  
+  <body>
+    <img src = "Images/Communs/entete1.png" alt = "logo" class = "logobande"/>
+    <div class = "bande dessus"> </div>
+    <header class = "header">
+      <img src = "Images/Communs/HTML.png" alt = "logo CSS" class = "logo CSS1"/>
+      <div>
+        <h1>  <em>HTML</em> & <em>CSS</em> </h1>
+      </div>
+      <img src = "Images/Communs/CSS.png" alt = "logo CSS" class = "logo CSS1"/>     
+    </header>
+    <div class = "bande dessous"> </div>
+    
+    <div id ="navbar" class = "navbar">
+      <a href = "index.html"> <h1><em>HTML</em></h1> </a>
+      <a href = "css.html"> <h1><em>CSS</em></h1> </a>
+      <a href = "maquette.html"> <h1><em>Première maquette</em></h1> </a>
+      <a href = "contact.html"> <h1><em>Contact</em></h1> </a>
+    </div>
+      <div id = "corps" class ="corps">
+       <nav id = "sommaire" class = "sommaire"> 
+          <h2> Sommaire </h2>
+          <ol>
+            <li> <a href = "#introduction"> Introduction</a></li>
+            <li> <a href = "#principe"> Principe</a></li>
+            <li> <a href = "#slasse"> Les sélecteurs class &amp; ID </a></li>
+            <li> <a href = "#selecteur"> Les combinateurs</a></li>
+            <li> <a href = "#flexbox"> Les flexbox</a></li>
+            <li> <a href = "#transition"> Les transitions</a></li>
+          </ol>
+        </nav>
+        <div id ="cours" class = "cours">
+          <section id ="introduction">
+            <h2> Introduction : </h2>
+            <p> <strong> CSS est le diminutif de Cascading StyleSheets </strong>, ou feuilles de styles en cascade. Le CSS a été créé en 1996 et a pour rôle de mettre en forme du contenu en lui 
+                     appliquant ce qu’on appelle des styles. Le CSS va nous permettre par exemple de définir la taille, la couleur ou l’alignement d’un texte. Nous allons donc utiliser 
+                     le CSS sur notre code HTML, afin d’enjoliver le résultat visuel final.</p>
+            <p>  Concrétement, e design d'un site évolue toujours au fil du temps. Le problème, lorsqu'on n'utilise pas de feuilles de style, c'est qu'il faut reprendre toutes les pages une à une pour modifier 
+                  une police de caractère ou une couleur de fond...</p>
+            <p> Avec les "Cascading Style Sheets" (CSS), ce lourd handicap est résolu. C'est dans la feuille de style que l'on va déclarer toute la mise en forme des pages : la couleur de fond, 
+                les polices de caractère, leurs couleurs, etc.</p>
+            <p> Pour plus de details  <a target = "_blank" href = "https://www.w3schools.com/css/"> cliquez ici.
+            </a> </p>
+          </section>
+          <section id ="principe">
+            <h2> Principe : </h2>
+            <p> Outre les couleurs et les polices, on peut aussi changer radicalement l'apparence d'un site en abandonnant la mise en page à l'aide de tableaux. Soyons clair : un tableau sert normalement 
+                à présenter des données tabulaires, pas à faire de la mise en page. Pour une mise en page souple et cohérente, on divisera la page en "blocs" (des div, appelés aussi "boites" ou "calques"), 
+                qui ont l'avantage de pouvoir être déplacés de gauche à droite, ou de haut en bas grâce aux CSS.</p>
+            <img src = "Images/CSS/div.png" alt = "logo CSS" class = "image"/>
+            <p> Autrement dit, on va s'amuser à metre des boites dans des boites et les positionner sur notre page web!</p>
+            <p> Attention néanmoins, le fait que ce soit possible ne veut pas dire en abuser. Il faut tout de même garder une relative cohérence avec le flux, c'est à dire l'ordre dans lequel les
+                informations ont été codées dans le code html.</p>
+            <p> Schématiquement, une feuille de styles ressemble à ça : </p>
+            <pre class = "code">                                                                                
+            div1 {
+              propriete1: valeur1;
+              propriete2: valeur2;
+              propriete3: valeur3;
+              }
+
+            div2 {
+              propriete1: valeur1;
+              propriete2: valeur2;
+              propriete3: valeur3;
+              propriete4: valeur4;
+              }
+
+            div3 {
+              propriete1: valeur1;
+            } 
+            </pre>
+          </section>
+          <section id ="classe">
+          <h2> Les sélecteurs class &amp; ID : </h2>
+          <p> A quoi servent les sélecteurs CSS class et id ? Tout simplement à définir des styles particuliers que l'on voudra reproduire de façon ponctuelle ou récurrente dans les pages HTML.</p>
+          <p> On peut utiliser indifféremment les attributs id et class pour appliquer des styles CSS aux éléments d'une page, mais...
+          <ul>
+            <li> un id s'applique à un objet unique : il ne peut pas y avoir deux mêmes id dans une page.</li>
+            <li> une classe peut caractériser plusieurs objets (identiques ou non).</li>
+          </ul>
+          <p> En effet, l'id ne doit désigner qu'un seul objet du document. On peut bien sûr définir autant d'id que l'on veut dans la feuille de style, mais il faut qu'ils soient uniques dans la page html.Pour la feuille 
+              de style CSS, les règles seront écrites avec la syntaxe #nom_id pour les id et .nom_de_classe pour les class. </p>              
+          </section>
+          <section id ="selecteur">
+          <h2> Les combinateurs : </h2>
+          <p> <strong> Les sélecteurs de voisin direct</strong></p>
+          <p> Le combinateur '+' permet de sélectionner les nœuds qui suivent immédiatement un élément donné.</p>
+          <p> Syntaxe : A + B </p>
+          <p> Exemple : ul + li permettra de cibler n'importe quel élément &lt;li&gt; qui suit immédiatement un élément &lt;ul&gt;.</p>
+          <p> <strong> Les sélecteurs de voisins </strong></p>
+          <p> Le combinateur '~' permet de sélectionner les nœuds qui suivent un élément et qui ont le même parent.</p>
+          <p> Syntaxe : A ~ B</p>
+          <p> Exemple : p ~ span permettra de cibler les éléments  &lt;span&gt; qui suivent un élément  &lt;p&gt; et qui ont le même élément parent.</p>
+          <p> <strong> Les sélecteurs d'éléments fils</strong> </p>
+          <p> Le combinateur '>' permet de sélectionner les selects nœuds qui sont des fils directs d'un élément donné.</p>
+          <p> Syntaxe : A > B </p>
+          <p> Exemple : ul > li permettra de cibler tous les éléments  &lt;li&gt; qui sont directement situés sous un élément  &lt;ul&gt;.</p>
+          <p> <strong> Les sélecteurs d'éléments descendants </strong> </p>
+          <p> Le combinateur ' ' permet de sélectionner les nœuds qui sont des descendants (pas nécessairement des fils directs) d'un élément donné.</p>
+          <p> Syntaxe : A B </p>
+          <p> Exemple : div span permettra de cibler n'importe quel élément  &lt;span&gt; situé à l'intérieur d'un élément  &lt;div&gt;. </p>
+                    
+          </section>
+          <section id ="flexbox">
+          <h2> Les flexbox  : </h2>
+          <p> Flexbox (pour flexible box) est un mode de mise en page prévoyant une disposition des éléments d’une page de telle sorte que ces éléments possèdent
+              un comportement prévisible lorsqu’ils doivent s’accommoder de différentes tailles d’écrans/appareils. Dans de nombreux cas, le modèle de boîte Flexbox offre
+              une amélioration du modèle block dans lequel les flottements (float) ne sont pas utilisés, pas plus que la fusion des marges du conteneur flex avec ses éléments.</p>
+          <p> Nous avons trouvé après utilisation que le modèle de flexbox est plus simple à utiliser. Les éléments enfants d’une flexbox peuvent être placés dans n’importe quelle direction 
+              et peuvent avoir des dimensions pour s'adapter à la place disponible. Positionner les éléments enfants est ainsi plus simple et les agencements complexes peuvent être mis en place 
+              plus simplement et avec un code plus propre, étant donné que l'ordre d'affichage des éléments est indépendant de leur ordre dans le code source. Cette indépendance intentionnelle affecte 
+              seulement le rendu visuel, laissant les synthèses vocales et la navigation basées sur le code source. </p>
+          <p> pour son utilisation, je vous envoie vers ce lien : </p> 
+          <ul>
+            <li><a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target = "_blank"> https://css-tricks.com </a></li>
+            <li> <a href =  "https://www.w3schools.com/css/css3_flexbox.asp" target ="_blank"> https://www.w3schools.com </a></li>
+            <li> <a href =  "https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox" target ="_blank">  https://openclassrooms.com </a></li>
+          </ul>
+          </section>
+          <section id = "transition">
+            <h2> Les trabnsitions </h2>
+            <p> Les transitions CSS permettent de contrôler la vitesse d'animation lorsque les propriétés CSS sont modifiées. Plutôt que le changement soit immédiat, on peut l'étaler sur une certaine période. 
+              Ainsi, si on souhaite passer un élément de blanc à noir, on pourra utiliser les transitions CSS afin que cette modification soit effectuée progressivement, selon une courbe d'accélération donnée.</p>
+            <p> On peut définir les propriétés qu'on souhaite animer et la façon dont on souhaite les animer. Cela permet de créer des transitions complexes. Toutefois, toutes les propriétés ne peuvent pas être animées 
+                  et <a target = "_blank" href = "https://developer.mozilla.org/fr/docs/Web/CSS/Liste_propri%C3%A9t%C3%A9s_CSS_anim%C3%A9es" > la liste des propriétés concernées est limitée. </a></p>
+            <p> <a target = "_blank" href = "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS">  pour plus de détails </a></p>
+            <h2> Exemple </h2>
+            <p> Cette boîte utilise des transitions, survolez la pour voir l'effet.</p>
+            <div class="box1"></div>
+            <p> Pour plus d'exemples et les codes associés dirigez-vous vers ce <a target = "_blank" href = "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS">  lien </a> </p>
+          </section>
+          <a href = "#sommaire" > Retour en haut de la page. </a>
+        </div>
+      </div>
+    
+    
+  </body>  
+  
+</html>
